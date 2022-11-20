@@ -1,64 +1,116 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 body {
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 10vh;
-  font-family: "Roboto", sans-serif;
+  font-family: "Press Start 2P", cursive;
   align-items: center;
+  background-image: url("img/1G1_Maelys_SY_Cadre.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  align-items: end;
+  background-color: #f2feff;
+}
+body .gif {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+body .ordi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 body h1 {
   font-size: 50px;
-}
-body button {
-  height: 50px;
-  border-radius: 10px;
-  border: none;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  border: 1px solid black;
+  z-index: 10;
+  width: 100%;
   text-transform: uppercase;
-  background-color: transparent;
-  padding: 0.5rem 1rem;
+  margin-left: -15%;
+  line-height: 1.5;
+  margin-top: 8vh;
 }
 
 main {
   display: flex;
   flex-direction: row;
   width: 80%;
-  margin: auto;
-  justify-content: space-between;
-  border: 50px solid transparent;
-  outline: 1px solid black;
   border-radius: 20px;
+  margin: 10vh auto -20vh auto;
+  z-index: 10;
+  /*
+    div:nth-child(1) {
+      background-color: pink;
+      width: 10px;
+      height: 15px;
+      border-radius: 10px;
+      z-index: 10;
+      //border:1px solid black;
+      margin: 0;
+      padding: 0;
+    }
+
+    div:nth-child(2) {
+      position: absolute;
+      width: 10px;
+      height: 100px;
+      z-index: 8;
+      border-radius: 0 0 10px 10px;
+      background-color: rgb(245, 234, 220);
+      margin-top: 5px;
+      //border:1px solid black;
+      padding: 0;
+      background-color: red;
+    }
+
+   */
 }
 main div {
   display: flex;
   flex-direction: column;
-  height: 100px;
-  width: 10px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-}
-main div:nth-child(1) {
-  background-color: red;
-  width: 10px;
-  height: 15px;
-  border-radius: 10px;
   z-index: 10;
+  margin: 20px;
+  border: none;
+  height: 10vh;
+  width: 100%;
 }
-main div:nth-child(2) {
-  position: absolute;
-  width: 10px;
+main div:hover {
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+main div {
   height: 100px;
-  border-radius: 0 0 10px 10px;
-  background-color: rgb(245, 234, 220);
+  width: 15px;
+  background-color: black;
+  padding: 5px;
+  margin: 10px;
 }
 
-button {
-  margin-top: 20px;
+main:nth-child(1) div:nth-child(2) {
+  background-color: aqua;
+}
+
+footer {
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+}
+footer button {
+  z-index: 10;
+  background-color: transparent;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 30px;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
